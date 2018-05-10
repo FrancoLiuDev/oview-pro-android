@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- camera led lighting control bar  -->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@color/color_black"
+               android:layout_above="@+id/button_take_picture"
+               android:id="@+id/take_type_layout"
+               android:visibility="visible"
+               android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_main_transparent_dark"
+        android:layout_above="@+id/button_take_picture"
+
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/take_type_default"
+            android:gravity="center"
+            android:layout_weight="0.33"
+            android:textColor="@color/color_white"
+            android:id="@+id/textView_type_default"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="@string/take_type_test"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:textColor="@color/color_white"
+
+            android:id="@+id/textView_type_test"/>
+        <TextView
+            android:text="@string/take_type_one"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:textColor="@color/color_white"
+
+            android:id="@+id/textView_type_one"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

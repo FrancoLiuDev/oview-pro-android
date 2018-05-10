@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Oview Pro</string>
+
+    <string name="please_place_qrcode_inorder_to_scan"> 将行动条码置方框内，即可自动扫描</string>
+    <string name="please_place_qrcode_inorder_to_scan_sec_lag">Place qr code inside the rectangle to scan it</string>
+
+
+
+    <string name="invalid_input_ip_addr">無效的伺服地址</string>
+
+    <string name="camera_loading">连线相机中</string>
+    <string name="camera_loading＿error">相机无法连线</string>
+    <string name="faild_file＿upload">上传失败</string>
+    <string name="success_file＿upload">上传成功</string>
+    <string name="file＿reupload">重新上传</string>
+    <string name="file＿cancel_upload">取消上传</string>
+
+    <string name="continue_capture">继续拍照</string>
+    <string name="stop_capture">停止拍照</string>
+
+
+    <string name="proceesing">执行中</string>
+    <string name="please_wait">请稍后...</string>
+
+    <string name="connect_to_camera">连线相机</string>
+    <string name="disconnect_to_camera">断开相机</string>
+    <string name="connect_to_device">连线机台</string>
+    <string name="upload">上传</string>
+    <string name="uploading">上传中</string>
+
+
+    <string name="light">灯光</string>
+
+    <string name="light_control_left">左灯</string>
+    <string name="light_control_right">右灯</string>
+
+    <string name="color_control">颜色</string>
+    <string name="bottomstage">底板</string>
+    <string name="shootingcuts">张数</string>
+    <string name="shoot">拍照</string>
+
+    <string name="light_top">顶光</string>
+    <string name="light_back">背景</string>
+    <string name="light_bottom">底板</string>
+
+
+    <string name="light_open">全开</string>
+    <string name="light_close">全关</string>
+    <string name="light_up">上</string>
+    <string name="light_middle">中</string>
+    <string name="light_below">下</string>
+
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+
+    <string name="take_fore">4张</string>
+    <string name="take_eight">8张</string>
+    <string name="take_sixtheen">16张</string>
+    <string name="take_thirdtwo">32张</string>
+    <string name="take_foreright">48张</string>
+
+    <string name="take_type_default">拍摄</string>
+    <string name="take_type_test">试拍</string>
+    <string name="take_type_one">单张</string>v
+</resources>

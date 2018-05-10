@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- camera led lighting control bar  -->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@color/color_main_transparent_dark"
+               android:layout_above="@+id/button_take_picture"
+               android:id="@+id/lighting_control_bar"
+               android:visibility="visible"
+               android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/light"
+        android:layout_weight="0.20"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:id="@+id/textView_light"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:text="@string/color_control"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="0.20"
+        android:textColor="@color/color_white"
+
+        android:id="@+id/textView_color_control"/>
+    <TextView
+        android:text="@string/bottomstage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="0.20"
+        android:textColor="@color/color_white"
+
+        android:id="@+id/textView_bottomstage"/>
+
+    <TextView
+        android:text="@string/shootingcuts"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="0.20"
+        android:textColor="@color/color_white"
+
+        android:id="@+id/textView_shooting_cuts"/>
+
+    <TextView
+        android:text="@string/shoot"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.20"
+        android:textColor="@color/color_white"
+        android:gravity="center"
+        android:id="@+id/textView_shooting"/>
+
+
+
+</LinearLayout>
+

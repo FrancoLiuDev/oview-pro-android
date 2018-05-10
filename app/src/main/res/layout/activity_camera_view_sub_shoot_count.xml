@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- camera led lighting control bar  -->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@color/color_black"
+               android:layout_above="@+id/button_take_picture"
+               android:id="@+id/take_count_layout"
+               android:visibility="visible"
+               android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_main_transparent_dark"
+        android:layout_above="@+id/button_take_picture"
+
+
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/take_fore"
+            android:gravity="center"
+            android:layout_weight="0.20"
+            android:textColor="@color/color_white"
+            android:id="@+id/textView_count_4"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="@string/take_eight"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:textColor="@color/color_white"
+
+            android:id="@+id/textView_count_8"/>
+        <TextView
+            android:text="@string/take_sixtheen"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:textColor="@color/color_white"
+
+            android:id="@+id/textView_count_16"/>
+
+        <TextView
+            android:text="@string/take_thirdtwo"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:textColor="@color/color_white"
+
+            android:id="@+id/textView_count_32"/>
+
+        <TextView
+            android:text="@string/take_foreright"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:textColor="@color/color_white"
+
+            android:id="@+id/textView_count_48"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- camera led lighting control bar  -->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/color_black"
+               android:layout_above="@+id/button_take_picture"
+               android:id="@+id/lighting_color_panel"
+               android:visibility="gone"
+               android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/color_main_transparent_dark"
+        android:layout_above="@+id/button_take_picture"
+        android:id="@+id/light_right"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text="@string/confirm"
+            android:textColor="@color/color_control_panel_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textbutton_color_confirm"/>
+
+        <TextView
+            android:text="@string/cancel"
+            android:textColor="@color/color_control_panel_text"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textbutton_color_cancel"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/color_main_transparent_dark"
+        android:layout_above="@+id/button_take_picture"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@color/color_main_transparent_dark"
+            android:layout_above="@+id/button_take_picture"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/original_s"
+                android:id="@+id/image_color_picked"
+                android:layout_weight="1"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@color/color_main_transparent_dark"
+            android:layout_above="@+id/button_take_picture"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:src= "@drawable/color_picker_bar"
+                android:id="@+id/image_color_picker"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:src="@drawable/gray_light_bar"
+                android:id="@+id/image_gray_picker"
+                 />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

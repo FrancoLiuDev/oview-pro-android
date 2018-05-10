@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- camera led lighting control bar  -->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/color_black"
+               android:layout_above="@+id/button_take_picture"
+               android:id="@+id/lighting_power_panel"
+               android:visibility="gone"
+               android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/color_main_transparent_dark"
+        android:layout_above="@+id/button_take_picture"
+
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text="@string/confirm"
+            android:textColor="@color/color_control_panel_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textbutton_switch_confirm"/>
+
+        <TextView
+            android:text="@string/cancel"
+            android:textColor="@color/color_control_panel_text"
+            android:layout_alignParentRight="true"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textbutton_switch_cancel"/>
+
+
+    </RelativeLayout>
+
+    <Switch
+        android:text="@string/light_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_control_panel_text"
+        android:id="@+id/switch_backgrund_top"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:text="@string/light_control_left"
+        android:textColor="@color/color_control_panel_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="@color/color_main_transparent_dark"
+                  android:layout_above="@+id/button_take_picture"
+                  android:id="@+id/light_left"
+
+                  android:orientation="horizontal">
+
+        <RadioGroup
+
+        android:id="@+id/rgroup"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:orientation="horizontal" >
+
+            <RadioButton
+                android:text="@string/light_open"
+                android:buttonTint="@color/color_control_tint"
+                android:textColor="@color/color_control_panel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/left_radioButton_open"
+                android:layout_weight="0.2"/>
+
+
+            <RadioButton
+                android:text="@string/light_up"
+                android:buttonTint="@color/color_control_tint"
+                android:textColor="@color/color_control_panel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/left_radioButton_up"
+                android:layout_weight="0.2"/>
+
+            <RadioButton
+                android:text="@string/light_middle"
+                android:buttonTint="@color/color_control_tint"
+                android:textColor="@color/color_control_panel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/left_radioButton_middle"
+                android:layout_weight="0.2"/>
+            <RadioButton
+                android:text="@string/light_below"
+                android:buttonTint="@color/color_control_tint"
+                android:textColor="@color/color_control_panel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/left_radioButton_down"
+                android:layout_weight="0.2"/>
+            <RadioButton
+                android:text="@string/light_close"
+                android:buttonTint="@color/color_control_tint"
+                android:textColor="@color/color_control_panel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/left_radioButton_close"
+                android:layout_weight="0.2"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/light_control_right"
+        android:textColor="@color/color_control_panel_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_main_transparent_dark"
+        android:layout_above="@+id/button_take_picture"
+        android:id="@+id/light_right"
+
+        android:orientation="horizontal">
+
+        <RadioGroup
+
+            android:id="@+id/rgroup2"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:text="@string/light_open"
+                android:buttonTint="@color/color_control_tint"
+                android:textColor="@color/color_control_panel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/right_radioButton_open"
+                android:layout_weight="0.2"/>
+
+
+            <RadioButton
+                android:text="@string/light_up"
+                android:buttonTint="@color/color_control_tint"
+                android:textColor="@color/color_control_panel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/right_radioButton_up"
+                android:layout_weight="0.2"/>
+
+            <RadioButton
+                android:text="@string/light_middle"
+                android:buttonTint="@color/color_control_tint"
+                android:textColor="@color/color_control_panel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/right_radioButton_middle"
+                android:layout_weight="0.2"/>
+            <RadioButton
+                android:text="@string/light_below"
+                android:buttonTint="@color/color_control_tint"
+                android:textColor="@color/color_control_panel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/right_radioButton_down"
+                android:layout_weight="0.2"/>
+            <RadioButton
+                android:text="@string/light_close"
+                android:buttonTint="@color/color_control_tint"
+                android:textColor="@color/color_control_panel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/right_radioButton_close"
+                android:layout_weight="0.2"/>
+
+            </RadioGroup>
+
+
+    </LinearLayout>
+
+    <Switch
+        android:text="@string/light_back"
+        android:textColor="@color/color_control_panel_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch_backgrund_back"
+        android:layout_weight="1"/>
+
+    <Switch
+        android:text="@string/light_bottom"
+
+        android:textColor="@color/color_control_panel_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch_backgrund_bottom"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+

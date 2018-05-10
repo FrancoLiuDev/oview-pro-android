@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/color_black"
+                android:keepScreenOn="true"
+                android:fitsSystemWindows="true">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/layout_button_send"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+         >
+
+        <Button
+            android:text="@string/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_send"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:background="@color/color_black">
+        <LinearLayout
+            android:id="@+id/thumbnails"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="2dp"/>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/loadingProgressLayout"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        android:background="@color/color_main_transparent_dark"
+        android:alpha="0.87"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/error_content"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            android:background="@color/color_main_transparent_dark"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/icon_error"
+                />
+
+            <TextView
+                android:text="@string/faild_file＿upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/image_error"
+                android:textColor="@color/color_white"
+                android:id="@+id/textView_error"/>
+
+            <RelativeLayout  android:layout_width="180dp"
+                           android:layout_height="80dp"
+                           android:layout_centerHorizontal="true"
+                           android:layout_below="@+id/textView_error"
+                           android:orientation="horizontal">
+
+
+                <Button
+                    android:text="@string/file＿reupload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/button_re_upload"
+                     />
+
+                <Button
+                    android:text="@string/file＿cancel_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:id="@+id/button_stop_upload"
+                    />
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/success_content"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            android:background="@color/color_main_transparent_dark"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/icon_complete"
+                />
+
+            <TextView
+                android:text="@string/success_file＿upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/image_success"
+                android:textColor="@color/color_white"
+                android:id="@+id/textView_success"/>
+
+            <RelativeLayout   android:layout_width="180dp"
+                              android:layout_height="80dp"
+                           android:id="@+id/toolbar_group"
+                              android:layout_centerHorizontal="true"
+                           android:layout_below="@+id/textView_success"
+                           android:orientation="horizontal">
+
+
+                <Button
+                    android:text="@string/continue_capture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_continue_capture"
+                    android:layout_alignParentLeft="true"
+                     />
+
+                <Button
+                    android:text="@string/stop_capture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_stop_capture"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/loading_content"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            android:background="@color/color_main_transparent_dark"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                app:indicatorName="BallScaleMultipleIndicator"
+                app:indicatorColor="@color/color_white"
+                />
+
+            <TextView
+                android:text="@string/uploading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/avi"
+                android:textColor="@color/color_white"
+                android:id="@+id/textView4"/>
+
+            <TextView
+                android:text="--"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/textView4"
+                android:textColor="@color/color_white"
+                android:id="@+id/textViewUploadPercent"/>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
